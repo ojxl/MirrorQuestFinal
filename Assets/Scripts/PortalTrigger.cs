@@ -11,17 +11,18 @@ public class PortalTrigger : MonoBehaviour
 
             if (gm.mirrorCount >= 3)
             {
-                int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+                string currentScene = SceneManager.GetActiveScene().name;
 
-                if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+                if (currentScene == "Scene3")
                 {
-                    Debug.Log("Portal opened! Loading next scene...");
-                    SceneManager.LoadScene(nextSceneIndex);
+                    Debug.Log("Final level complete! Loading WIN screen...");
+                    SceneManager.LoadScene("Win");
                 }
                 else
                 {
-                    Debug.Log("Game complete! Loading menu...");
-                    SceneManager.LoadScene("Menu"); // Or "Win", if you make a win screen
+                    int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+                    Debug.Log("Portal opened! Loading next scene...");
+                    SceneManager.LoadScene(nextSceneIndex);
                 }
             }
             else
