@@ -8,6 +8,8 @@ public class PortalTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             GameManager gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+// SceneManager.GetActiveScene() and .buildIndex used from Unity Scripting API:
+// https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.GetActiveScene.html
 
             if (gm.mirrorCount >= 3)
             {
