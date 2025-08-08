@@ -974,6 +974,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HUD
       objectReference: {fileID: 0}
+    - target: {fileID: 4006309131641143440, guid: 31d915eeaa1b6534e945f5bb6ccc480c, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5c428ccc2a911d043921526c83701801, type: 2}
+    - target: {fileID: 4006309131641143440, guid: 31d915eeaa1b6534e945f5bb6ccc480c, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6780333328433853713, guid: 5c428ccc2a911d043921526c83701801, type: 2}
+    - target: {fileID: 4006309131641143440, guid: 31d915eeaa1b6534e945f5bb6ccc480c, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6337532790503640827, guid: 31d915eeaa1b6534e945f5bb6ccc480c, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1344,11 +1356,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4270079426443764402, guid: 38c8c22a04e348b4db4d3ade02743292, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4270079426443764402, guid: 38c8c22a04e348b4db4d3ade02743292, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -86
+      value: -60
       objectReference: {fileID: 0}
     - target: {fileID: 4270079426443764402, guid: 38c8c22a04e348b4db4d3ade02743292, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1365,6 +1377,18 @@ PrefabInstance:
     - target: {fileID: 5420721986098776522, guid: 38c8c22a04e348b4db4d3ade02743292, type: 3}
       propertyPath: m_text
       value: 'Timer: 60'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5420721986098776522, guid: 38c8c22a04e348b4db4d3ade02743292, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5c428ccc2a911d043921526c83701801, type: 2}
+    - target: {fileID: 5420721986098776522, guid: 38c8c22a04e348b4db4d3ade02743292, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6780333328433853713, guid: 5c428ccc2a911d043921526c83701801, type: 2}
+    - target: {fileID: 5420721986098776522, guid: 38c8c22a04e348b4db4d3ade02743292, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5874045986062623279, guid: 38c8c22a04e348b4db4d3ade02743292, type: 3}
       propertyPath: m_Name
