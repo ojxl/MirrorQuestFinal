@@ -31,6 +31,16 @@ public class MenuManager : MonoBehaviour
     {
         SceneManager.LoadScene("Win");//for ur win scene
     }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Menu"); // Load the main menu scene
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene("Scene1");// Restart the game by loading the first scene
+    }
 }
 
 
