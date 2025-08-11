@@ -11,7 +11,7 @@ public class PortalTrigger : MonoBehaviour
 // SceneManager.GetActiveScene() and .buildIndex used from Unity Scripting API:
 // https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.GetActiveScene.html
 
-            if (gm.mirrorCount >= 3)
+            if (gm.mirrorCount >= 2)
             {
                 string currentScene = SceneManager.GetActiveScene().name;
 
