@@ -4,8 +4,11 @@ public class SpawnManager : MonoBehaviour
 {
     [Header("Gems")]
     [SerializeField] GameObject[] MirrorPrefabs;     // your gem prefabs
-    [SerializeField] Transform[] MirrorSpawnPoints;  // your GemSpot_ transforms
+    [SerializeField] Transform[] MirrorSpawnPoints;  // your GemSpot_ transforms but it doesnt really ugh
     [SerializeField] int MirrorsToSpawn = 3;         // spawn exactly 3
+
+    //I'm gonna crash out wth nothings working 
+
 
     void Start()
     {
@@ -13,7 +16,7 @@ public class SpawnManager : MonoBehaviour
     }
 
     // Each time we pick a random spot from the "available" head of the array,
-    // spawn there, swap it to the tail, and shrink the available range.
+    // spawn there, swap it, and shrink the available range.
     void SpawnUniqueNoLists(GameObject[] prefabs, Transform[] points, int count)
     {
         if (prefabs == null || prefabs.Length == 0) return;
