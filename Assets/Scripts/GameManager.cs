@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-      public int mirrorCount = 0;
+    public int mirrorCount = 0;
     public int lives = 2;
 
     public TextMeshProUGUI mirrorText;
@@ -15,15 +15,15 @@ public class GameManager : MonoBehaviour
         UpdateLives();
     }
     public void LoseLife()
-{
-    lives--;
-    UpdateLives();
-
-    if (lives <= 0)
     {
-        SceneManager.LoadScene("GameOver");  
+        lives--;
+        UpdateLives();
+
+        if (lives <= 0)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
     }
-}
 
     void UpdateLives()
     {

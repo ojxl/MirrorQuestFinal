@@ -47,6 +47,7 @@ public class LevelTimer : MonoBehaviour
             warned = true;
 
             // Start a coroutine to flash the timer text while time is low.
+            //Corutine basically allows you to pause something without stopping the whole game 
             StartCoroutine(FlashTimer());
         }
 
