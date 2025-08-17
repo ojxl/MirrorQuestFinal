@@ -8,6 +8,9 @@ public class MirrorPickup : MonoBehaviour
         {
             GameObject.Find("GameManager").GetComponent<GameManager>().AddMirror();
             Destroy(gameObject);
+
+             AudioSource audio = other.GetComponent<AudioSource>();
+            if (audio != null) audio.Play();
         }
     }
 }
