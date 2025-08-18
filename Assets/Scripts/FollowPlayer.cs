@@ -1,4 +1,4 @@
-//anytie i use CwC in the project it just means Create with Code like Unity
+//anytime i use CwC in the project it just means Create with Code like Unity
 
 using UnityEngine;
 

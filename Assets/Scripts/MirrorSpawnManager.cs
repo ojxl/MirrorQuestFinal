@@ -4,7 +4,7 @@ using UnityEngine;
 public class MirrorSpawnManager : MonoBehaviour
 {
     [Header("Mirrors")]
-    [SerializeField] private GameObject[] mirrorPrefabs;     // dragged mirror prefabs here
+    [SerializeField] private GameObject[] mirrorPrefabs;     // dragged mirror prefabs here Unit6
     [SerializeField] private Transform[] mirrorSpawnPoints;  // dragged MirrorSpot_ here
     [SerializeField] private int mirrorsToSpawn = 3;         // brief: 3 randomly placed so 3 it is
 

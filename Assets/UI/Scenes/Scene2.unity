@@ -1345,9 +1345,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mirrorPrefabs:
-  - {fileID: 4449696811746729150, guid: 95720e69a089264428fef56b03c800ea, type: 3}
-  - {fileID: 6490994089229216158, guid: 0aab4147f33f4374daf1c83b540d1b99, type: 3}
-  - {fileID: 7779257824287753646, guid: 9e7972dc5b6fcf346922bef80bf1bcb3, type: 3}
+  - {fileID: 5992971415921897399, guid: 1d3fb88701a62c040a98d250cf8f68e3, type: 3}
+  - {fileID: 5992971415921897399, guid: 1d3fb88701a62c040a98d250cf8f68e3, type: 3}
+  - {fileID: 5992971415921897399, guid: 1d3fb88701a62c040a98d250cf8f68e3, type: 3}
   mirrorSpawnPoints:
   - {fileID: 1712760091}
   - {fileID: 915133593}

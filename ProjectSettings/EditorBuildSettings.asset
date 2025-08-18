@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/HandMirror/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/UI/Scenes/Menu.unity
+    guid: e35a96ef821a94e4f852026dee54aac4
   - enabled: 1
     path: Assets/UI/Scenes/Scene1.unity
     guid: d64ff16cfbfb09f4cabccac59bd58a83
@@ -23,9 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/UI/Scenes/Win.unity
     guid: e18d45f1f0eb4dd4d9c2094009980e17
-  - enabled: 1
-    path: Assets/UI/Scenes/Menu.unity
-    guid: e35a96ef821a94e4f852026dee54aac4
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
