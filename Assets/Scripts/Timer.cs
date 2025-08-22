@@ -5,11 +5,12 @@ using TMPro;                         // TextMeshPro UI (CwC Unit 5 – Keeping S
 
 /// LevelTimer
 /// Counts down from a scene-specific time limit, updates a TMP text as MM:SS,
-/// warns once at low time (optional beep + flash idk yet ill decide), and loads a Game Over scene at 0.
+/// warns once at low time n flash, and loads a Game Over scene at 0.
 /// This stitches together patterns taught in Create with Code: deltaTime timing (Unit1), UI text updates(Unit 5.2), coroutines/WaitForSeconds(Unit 4.3), and SceneManager scene loads(Unit 5.3).
 public class LevelTimer : MonoBehaviour
 {
-    //serialised fields so i can inspect and change them in Unity
+    //serialised fields so i can inspect and change 
+    // them in Unity. makes variable visible in inspector w/out making it public
     [Header("Timer Settings")]
     // total seconds for this level(Unit 6)
     [SerializeField] float timeLimit = 30f;      
@@ -69,12 +70,16 @@ public class LevelTimer : MonoBehaviour
     // Reformat seconds as MM:SS and write to the TextMeshPro label.
     void UpdateTimerUI()
     {
-        int seconds = Mathf.CeilToInt(timeLeft); // ceil so 5.1s shows as 00:06
-        int mins = seconds / 60;
-        int secs = seconds % 60;
+        int seconds = Mathf.CeilToInt(timeLeft); // e.g. 5.1s shows as 00:06
+        int mins    = seconds / 60;
+        int secs    = seconds % 60;              // CwC uses % in Unit 6
+        if (timerText != null)
+        {
+            string m = (mins < 10 ? "0" : "") + mins;
+            string s = (secs < 10 ? "0" : "") + secs;
+            timerText.text = m + ":" + s;   // mirrors Unit 5’s pattern
+        }
 
-        if (timerText)
-            timerText.text = $"{mins:00}:{secs:00}";
     }
 
     // I used the Unit 4.3 coroutine + WaitForSeconds pattern to run a loop,

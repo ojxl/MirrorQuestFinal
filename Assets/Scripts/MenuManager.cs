@@ -1,13 +1,15 @@
+//Mnaages scebe transitions in the game. lets u load different scenes from UI triggers
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
+// Loads the main menu scene when the game starts
     public void StartGame()
     {
         SceneManager.LoadScene("Scene1"); // Or your first level scene
     }
-
+// Loads all the different scenes based on the button pressed
     public void GoToScene1()
     {
         SceneManager.LoadScene("Scene1");//for ur scene1 

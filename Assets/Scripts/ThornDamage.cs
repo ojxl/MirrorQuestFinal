@@ -1,3 +1,5 @@
+//This script makes the player lose a life and play a sound when they touch 
+//thorns (or any object with this script).
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
