@@ -15,8 +15,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI mirrorText;
     //UI element to display the number of lives
     public TextMeshProUGUI livesText;
-
-    void Start()
+        void Start()
     {
         //Calls the UpdateLives method to display the starting number of lives
         UpdateLives();
@@ -26,7 +25,7 @@ public class GameManager : MonoBehaviour
         //Decreases the number of lives by 1 and updates the UI
         lives--;
         UpdateLives();
-// If lives reach 0, load the Game Over scene
+        // If lives reach 0, load the Game Over scene
         if (lives <= 0)
         {
             SceneManager.LoadScene("GameOver");
@@ -45,4 +44,5 @@ public class GameManager : MonoBehaviour
         mirrorCount++;
         mirrorText.text = "Mirrors: " + mirrorCount;
     }
+    
 }

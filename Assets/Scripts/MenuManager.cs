@@ -3,13 +3,19 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
+
 {
-// Loads the main menu scene when the game starts
+    //Beta and Alpha GitHub links
+    public string url1 = "https://github.com/ojxl/MirrorQuestFinal.git";
+    public string url2 = "https://github.com/ojxl/MirrorQuestGame.git";
+
+
+    // Loads the main menu scene when the game starts
     public void StartGame()
     {
-        SceneManager.LoadScene("Scene1"); // Or your first level scene
+        SceneManager.LoadScene("Scene1"); // for your first level scene
     }
-// Loads all the different scenes based on the button pressed
+    // Loads all the different scenes based on the button pressed
     public void GoToScene1()
     {
         SceneManager.LoadScene("Scene1");//for ur scene1 
@@ -42,6 +48,14 @@ public class MenuManager : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene("Scene1");// Restart the game by loading the first scene
+    }
+     public void OpenGitBeta()
+    {
+        Application.OpenURL(url1);
+    }
+    public void OpenGitAlpha()
+    {
+        Application.OpenURL(url2);
     }
 }
 
