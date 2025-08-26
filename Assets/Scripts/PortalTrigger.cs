@@ -18,6 +18,9 @@ public class PortalTrigger : MonoBehaviour
             if (gm.mirrorCount >= 3)
             {
                 // Get the current scene name to determine if it's the final level
+                //https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.GetActiveScene.html
+                //I already knew how to do this as i had previously done it too but im citing it just in case
+                //this was in unit 5.3 too
                 string currentScene = SceneManager.GetActiveScene().name;
 
                 // If the current scene is "Scene3", load the win screen
