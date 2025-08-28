@@ -24,6 +24,9 @@ Audio name is the same as it is on the website it hasnt been changed in game. it
 f.	Game Over: https://pixabay.com/music/fantasy-dreamy-childrens-fairy-tale-fantasy-123608/
 Audio name is the same as it is on the website it hasnt been changed in game. its in Assets/Audios called fairy-tale-fantasy
 
+code reference 
+MenuManager.cs last line application.openurl reference - https://docs.unity3d.com/ScriptReference/Application.OpenURL.html
+
 1.	Button sound: https://freesound.org/people/finix473/sounds/546974/ - Audio name is the same as it is on the website it hasnt been changed in game. its in Assets/Audios called 546974__finix473__ui_click
 2.	Font: https://fonts.google.com/specimen/Princess+Sofia?query=princess - Called Princess Sofia font and is in Assets/Fonts
 3.	Main Menu Background - https://ie.pinterest.com/pin/7248049395781058/ - Stored in Assets and is called Background
